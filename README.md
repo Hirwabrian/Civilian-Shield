@@ -160,9 +160,10 @@ To simulate high-traffic scenarios (e.g., mass protests), the API was stress-tes
 
 -----
 
-## Video Demonstration
+## Video Demo and Pipeline Link
 
-**[[CLICK HERE TO VIEW THE YOUTUBE DEMO]](https://youtu.be/fH4IbHGntoA)*
+**[[CLICK HERE TO VIEW THE YOUTUBE DEMO]](https://youtu.be/fH4IbHGntoA)**
+**[[CLICK HERE TO VIEW THE  HOSTED PIPELINE]](https://civilian-shield-armstrong.streamlit.app)**
 > *"Surveillance goes both ways."* — **Civilian Shield v1.0**
 
 ```
