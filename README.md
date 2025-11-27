@@ -1,4 +1,4 @@
-# 🛡️ CIVILIAN SHIELD: Acoustic Counter-Surveillance System
+# CIVILIAN SHIELD: Acoustic Counter-Surveillance System
 
 > **"THE CENTER CANNOT HOLD."** > An automated machine learning pipeline for identifying state threats through acoustic intelligence.
 
@@ -6,18 +6,18 @@
 ![Language](https://img.shields.io/badge/PYTHON-3.9-blue?style=for-the-badge&logo=python)
 ![Framework](https://img.shields.io/badge/TENSORFLOW-2.x-orange?style=for-the-badge&logo=tensorflow)
 
-## 📋 Mission Directive (Project Overview)
+## Mission Directive (Project Overview)
 **Civilian Shield** is an end-to-end Machine Learning pipeline designed to empower communities with decentralized threat detection. In an era of increasing surveillance, this tool "watches back" by analyzing the acoustic environment in real-time.
 
 Utilizing a **Convolutional Neural Network (CNN)**, the system classifies environmental audio into 10 distinct categories, focusing on distinguishing between:
-* **⚠️ State Threats:** Sirens, Gunshots.
-* **✅ Civilian Activity:** Street Music, Children Playing, Drilling, Air Conditioners.
+* **State Threats:** Sirens, Gunshots.
+* **Civilian Activity:** Street Music, Children Playing, Drilling, Air Conditioners.
 
 The platform provides a **Brutalist, low-latency Interface** for civilians to scan audio files, visualize sector data, and collectively retrain the model to adapt to new environments ("Hive Learning").
 
 ---
 
-## 📂 The Dataset: UrbanSound8K
+## The Dataset: UrbanSound8K
 
 The model is trained on the **UrbanSound8K** dataset, a rigorous collection of 8,732 labeled sound excerpts (<=4s) from urban field recordings.
 
@@ -40,16 +40,9 @@ The model is trained on the **UrbanSound8K** dataset, a rigorous collection of 8
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The project follows a strict MLOps architecture divided into three core modules:
-mermaid
-graph LR
-    A[Raw Audio Input] -->|src/preprocessing.py| B(MFCC Feature Extraction)
-    B -->|src/model.py| C{CNN Model}
-    C -->|app/main.py| D[Streamlit Interface]
-    D -->|User Feedback| E[Incremental Retraining]
-    E -->|Update Weights| C
 
 1.  **Preprocessing (`src/preprocessing.py`):** Converts raw `.wav` waveforms into **MFCCs (Mel-Frequency Cepstral Coefficients)**. This extracts a 40-feature "acoustic fingerprint" representing the timbre of the sound.
 2.  **Model (`src/model.py`):** A Sequential Neural Network optimized with:
@@ -59,7 +52,7 @@ graph LR
 
 -----
 
-## ⚡ Installation Protocol
+## Installation Protocol
 
 Follow these steps to deploy the Civilian Shield on your local machine.
 
@@ -112,7 +105,7 @@ Due to size limits, the raw audio is not on GitHub.
 
 -----
 
-## 🖥️ Usage Directives
+## Usage Directives
 
 ### Launch the Interface
 
@@ -126,9 +119,9 @@ streamlit run app/main.py
 
 ### System Modules
 
-  * **👁️ THREAT SCAN:** Upload `.wav` or `.mp3` files. The system will flag "THREAT DETECTED" (Red) or "SAFE" (Green) with a confidence score.
-  * **📉 SECTOR DATA:** Visualize dataset balance, audio duration spread, and raw metadata metrics.
-  * **✊ HIVE LEARN (Retraining):**
+  * ** THREAT SCAN:** Upload `.wav` or `.mp3` files. The system will flag "THREAT DETECTED" (Red) or "SAFE" (Green) with a confidence score.
+  * ** SECTOR DATA:** Visualize dataset balance, audio duration spread, and raw metadata metrics.
+  * ** HIVE LEARN (Retraining):**
     1.  Upload a batch of new audio files.
     2.  Select the correct label (e.g., "Siren").
     3.  Click **"EXECUTE WEIGHT UPDATE"**.
@@ -136,7 +129,7 @@ streamlit run app/main.py
 
 -----
 
-## 📊 Evaluation & Performance
+## Evaluation & Performance
 
 The model was evaluated on a 20% unseen test set.
 
@@ -154,7 +147,7 @@ The model was evaluated on a 20% unseen test set.
 
 -----
 
-## ⚠️ Stress Testing (Locust)
+## Stress Testing (Locust)
 
 To simulate high-traffic scenarios (e.g., mass protests), the API was stress-tested using **Locust**.
 
@@ -166,17 +159,9 @@ To simulate high-traffic scenarios (e.g., mass protests), the API was stress-tes
 
 -----
 
-## 🎥 Video Demonstration
+## Video Demonstration
 
 **[CLICK HERE TO VIEW THE YOUTUBE DEMO]**
-
-  * **0:00** - Architecture Overview
-  * **1:30** - Threat Prediction Demo
-  * **3:45** - Hive Learning (Retraining) Walkthrough
-  * **5:00** - Evaluation Metrics Analysis
-
------
-
 > *"Surveillance goes both ways."* — **Civilian Shield v1.0**
 
 ```
