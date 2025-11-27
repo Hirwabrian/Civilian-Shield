@@ -151,17 +151,18 @@ The model was evaluated on a 20% unseen test set.
 
 To simulate high-traffic scenarios (e.g., mass protests), the API was stress-tested using **Locust**.
 
-  * **Simulation:** 500 Simultaneous Users
-  * **Spawn Rate:** 10 users/second
-  * **Result:** System maintained **\<200ms latency** with 0% failure rate.
+  * **Low load(10 Users):** Average Latency ~601ms with 3.1 RPS. System Stable.
+    <img width="1873" height="520" alt="image" src="https://github.com/user-attachments/assets/d35c7a8e-a22d-4106-9384-39feeb5fcdf4" />
 
-*(Insert Screenshot of Locust Charts Here)*
+  * **High load(100 Users):** Average Latency ~520ms with 28.9 RPS. The system demonstrated resilience under a 10x load increase, maintaining response times with 0% failure rate (likely benefiting from cloud caching/warm-up).
+    <img width="1872" height="491" alt="image" src="https://github.com/user-attachments/assets/b24dd410-f037-4334-b2f5-d3d45a5863c2" />
+
 
 -----
 
 ## Video Demonstration
 
-**[CLICK HERE TO VIEW THE YOUTUBE DEMO]**
+**[[CLICK HERE TO VIEW THE YOUTUBE DEMO]]([url](https://youtu.be/fH4IbHGntoA))**
 > *"Surveillance goes both ways."* — **Civilian Shield v1.0**
 
 ```
