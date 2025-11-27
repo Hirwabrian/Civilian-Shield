@@ -9,7 +9,7 @@
 ## Mission Directive (Project Overview)
 **Civilian Shield** is an end-to-end Machine Learning pipeline designed to empower communities with decentralized threat detection. In an era of increasing surveillance, this tool "watches back" by analyzing the acoustic environment in real-time.
 
-Utilizing a **Convolutional Neural Network (CNN)**, the system classifies environmental audio into 10 distinct categories, focusing on distinguishing between:
+Utilizing a **Multi-Layer Perceptron (MLP)** neural network, the system classifies environmental audio into 10 distinct categories, focusing on distinguishing between:
 * **State Threats:** Sirens, Gunshots.
 * **Civilian Activity:** Street Music, Children Playing, Drilling, Air Conditioners.
 
