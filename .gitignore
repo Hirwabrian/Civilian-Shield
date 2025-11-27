@@ -1,0 +1,18 @@
+# IGNORE DATA
+# Ignore the massive audio folders
+Data/train/audio/
+Data/uploads/
+
+# Ignore zip files if you still have them
+*.zip
+*.tar.gz
+
+# IGNORE VIRTUAL ENVIRONMENT
+venv/
+env/
+.env
+
+# IGNORE PYTHON CACHE
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
