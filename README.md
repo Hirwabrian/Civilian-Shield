@@ -1,10 +1,3 @@
-Here is the complete, professional `README.md` file for your project. I have written it to match the **"Civilian Shield / Resistance" aesthetic** while strictly adhering to the academic requirements of your assignment (Setup, Dataset, Evaluation, Pipeline).
-
-Copy the code block below and save it as `README.md` in your project folder.
-
------
-
-````markdown
 # 🛡️ CIVILIAN SHIELD: Acoustic Counter-Surveillance System
 
 > **"THE CENTER CANNOT HOLD."** > An automated machine learning pipeline for identifying state threats through acoustic intelligence.
@@ -50,15 +43,13 @@ The model is trained on the **UrbanSound8K** dataset, a rigorous collection of 8
 ## 🏗️ System Architecture
 
 The project follows a strict MLOps architecture divided into three core modules:
-
-```mermaid
+mermaid
 graph LR
     A[Raw Audio Input] -->|src/preprocessing.py| B(MFCC Feature Extraction)
     B -->|src/model.py| C{CNN Model}
     C -->|app/main.py| D[Streamlit Interface]
     D -->|User Feedback| E[Incremental Retraining]
     E -->|Update Weights| C
-````
 
 1.  **Preprocessing (`src/preprocessing.py`):** Converts raw `.wav` waveforms into **MFCCs (Mel-Frequency Cepstral Coefficients)**. This extracts a 40-feature "acoustic fingerprint" representing the timbre of the sound.
 2.  **Model (`src/model.py`):** A Sequential Neural Network optimized with:
